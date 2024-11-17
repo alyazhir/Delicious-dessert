@@ -1,0 +1,87 @@
+body{
+  background-color:rgb(239, 236, 227);
+}
+
+
+.home {
+    background-image: url('img/Free\ Photo\ _\ Dark\ wood\ table\ in\ vertical.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 5px;
+  }
+
+  /* Menambahkan garis bawah dengan posisi absolute dan transparansi awal */
+  .navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: #fffdfb;
+    transition: width 0.3s ease; /* Durasi dan tipe transisi */
+  }
+
+  /* Membuat garis bawah muncul penuh saat hover */
+  .navbar a:hover::after {
+    width: 100%;
+  }
+
+  /* Container untuk jumbotron */
+  .jumbotron {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+  }
+
+  /* Pastikan konten utama tidak tertutupi */
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+  .content h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #c1aaa9;
+  }
+
+  .content p {
+    color: #cecbcb;
+    font-size: 2rem;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  /* Atur bayangan di sebelah kanan */
+.shadow-right {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 200px; /* Lebar bayangan */
+  height: 100vh; /* Sesuaikan dengan tinggi layar */
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+  pointer-events: none; /* Agar bayangan tidak mengganggu interaksi */
+  z-index: 0;
+}
+
+  /* Bagian kanan: Gambar makanan */
+  .image-container {
+    float: left;
+  }
+
+  .main-image {
+    width: 690px; /* Ukuran gambar utama */
+  }
+
+ 

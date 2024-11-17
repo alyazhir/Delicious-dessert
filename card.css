@@ -1,0 +1,42 @@
+/* Mengatur gaya untuk elemen card */
+.card.text-bg-dark {
+    min-width: 50px;
+    margin: 10px 10px;
+    border: 0px solid #353434;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    
+}
+
+/* Background gelap transparan */
+.card-img-overlay {
+    background: rgba(0, 0, 0, 0.4); 
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* ukuran font title*/
+.card-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    text-decoration: none;
+    color: rgb(65, 164, 231);
+    font-size: 0.7rem;
+    margin-bottom: 5px;
+}
+
+.card-text small {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.horizontal {
+    display: flex;
+    justify-content: center;
+}
